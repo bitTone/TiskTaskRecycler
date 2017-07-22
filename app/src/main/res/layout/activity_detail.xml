@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tj.tisktaskrecycler.view.DetailActivity">
+
+    <ImageView
+        android:id="@+id/imv_colored_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/div_center"
+        />
+
+
+
+    <!-- The Top Half Of the View-->
+    <View
+        android:id="@+id/cont_colored_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/div_center"/>
+
+    <!-- Date and time Header-->
+
+    <TextView
+        style="@style/Text.Primary"
+        android:id="@+id/lbl_date_and_time_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/div_center"
+        tools:text="2:43AM "/>
+
+    <!-- The Bottom Half of the View -->
+    <View
+        android:id="@+id/div_center"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"/>
+<!--Message-->
+
+    <TextView
+        style="@style/Text.Secondary"
+        android:id="@+id/lbl_message_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div_center"
+        tools:text="Whats Up Bruah how u been"
+
+        />
+
+
+</RelativeLayout>
